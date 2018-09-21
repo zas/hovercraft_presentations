@@ -25,8 +25,8 @@ And connect with a browser to http://localhost:8000
 MetaBrainz Summit 2018
 ======================
 
-Current status of system & network resources
---------------------------------------------
+Our infrastructure
+------------------
 
 
 ----
@@ -69,9 +69,9 @@ Memory, storage, processing power
 Network traffic
 ===============
 
-* 180 Terabytes of data sent from gateways
+* *180 Terabytes* served this year
 
-* Mean rate of ~50 mbits/s out, 20 mbits/s in
+* *~50 mbits/s* out, *20 mbits/s* in
 
 
 .. note::
@@ -88,14 +88,58 @@ Network traffic
 
 ----
 
+:data-scale: 0.5
+:data-x: r1000
 :data-rotate: 90
 
 MusicBrainz services
 ====================
 
-* Number of queries served: **11 Billions** of 200s answers
+Number of queries served this year
+  
+**11 Billions** of 200s answers
+
+
+----
+
+:data-rotate: 90
+
+MusicBrainz services
+====================
 
 * Incoming Requests: 850 req/s
 
 * Handled by upstreams: 280 req/s
+
+----
+
+:data-y: r1000
+
+Post QNAP
+=========
+
+
+
+Bandwidth usage went from
+
+*120* mbits/s to *50* mbits/s
+
+
+----
+
+SOLR
+====
+
+* 6 servers on Hetzner Cloud
+* *180 req/s* during peak time
+* Worst mean response time: *125 ms*
+
+
+----
+
+Docker
+======
+
+~170 containers running
+
 
