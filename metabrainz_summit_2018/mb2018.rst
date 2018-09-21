@@ -22,6 +22,14 @@ And connect with a browser to http://localhost:8000
 
 ----
 
+:data-x: 0
+:data-y: 0
+:data-z: 0
+:data-rotate-x: 0
+:data-rotate-y: 0
+:data-rotate-z: 0
+:scale: 1
+
 MetaBrainz Summit 2018
 ======================
 
@@ -30,6 +38,11 @@ Our infrastructure
 
 
 ----
+
+:data-rotate-z: r45
+:data-x: 2000
+:data-y: 0
+
 
 Number of servers
 =================
@@ -40,13 +53,16 @@ Number of servers
 
 * Google Cloud: 12 active instances
 
-* Total: 40 servers
+* Total: **40 servers**
 
 .. note::
 
     TODO
 
 ----
+
+:data-x: r-1000
+:data-y: r-1000
 
 Memory, storage, processing power
 =================================
@@ -64,7 +80,6 @@ Memory, storage, processing power
 
 ----
 
-:data-y: r1000
 
 Network traffic
 ===============
@@ -80,7 +95,6 @@ Network traffic
 
 ----
 
-:data-rotate-x: 90
 
 .. image:: images/ping_latency_world.png
     :height: 600px
@@ -88,9 +102,7 @@ Network traffic
 
 ----
 
-:data-scale: 0.5
-:data-x: r1000
-:data-rotate: 90
+:id: mbs1
 
 MusicBrainz services
 ====================
@@ -102,18 +114,16 @@ Number of queries served this year
 
 ----
 
-:data-rotate: 90
 
 MusicBrainz services
 ====================
 
-* Incoming Requests: 850 req/s
+* Incoming Requests: *850 req/s*
 
-* Handled by upstreams: 280 req/s
+* Handled by upstreams: **280 req/s**
 
 ----
 
-:data-y: r1000
 
 Post QNAP
 =========
@@ -133,13 +143,46 @@ SOLR
 * 6 servers on Hetzner Cloud
 * *180 req/s* during peak time
 * Worst mean response time: *125 ms*
-
+* full redundancy, automatic fail over
 
 ----
 
 Docker
 ======
 
-~170 containers running
+*170* containers running
 
 
+----
+
+Stability
+=================
+
+* 99.9% availability of core services
+* limited failure impact
+* crappy cpu fans (6 were replaced)
+* still too many **SPoFs**
+
+----
+
+Soon...
+=======
+
+* work at reducing SPoFs
+* improved database backups using Barman
+* moving more services to VMs
+* upgrading to 18.04
+* upgrading docker + consul
+
+
+----
+
+:scale: 3
+:data-z: 8000
+        
+Thanks !
+========
+
+Made with Hovercraft_
+
+.. _Hovercraft: https://github.com/regebro/hovercraft
