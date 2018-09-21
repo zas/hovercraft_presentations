@@ -1,0 +1,101 @@
+:title: MetaBrainz Summit 2018 - Resources
+:data-transition-duration: 1500
+:css: mb2018.css
+:skip-help: true
+
+This is a presentation of system resources, their usage, etc for MetaBrainz Summit 2018
+
+You can render this presentation to HTML with the command::
+
+    hovercraft mb2018.rst
+
+And connect with a browser to http://localhost:8000
+
+.. header::
+
+    .. image:: images/background.png
+
+ 
+ .. footer::
+
+    "System & Network Resources", Laurent Monin, MetaBrainz Summit 2018 
+
+----
+
+MetaBrainz Summit 2018
+======================
+
+Current status of system & network resources
+--------------------------------------------
+
+
+----
+
+Number of servers
+=================
+
+* Hetzner: 20 physical machines
+
+* Hetzner Cloud: 8 virtual machines
+
+* Google Cloud: 12 active instances
+
+* Total: 40 servers
+
+.. note::
+
+    TODO
+
+----
+
+Memory, storage, processing power
+=================================
+
+* 1.5 Terabytes of RAM
+
+* 18 Terabytes of storage
+
+* 1.7M Bogomips on 240 CPU cores
+
+
+.. note::
+
+    TODO.
+
+----
+
+:data-y: r1000
+
+Network traffic
+===============
+
+* 180 Terabytes of data sent from gateways
+
+* Mean rate of ~50 mbits/s out, 20 mbits/s in
+
+
+.. note::
+
+    TODO
+
+----
+
+:data-rotate-x: 90
+
+.. image:: images/ping_latency_world.png
+    :height: 600px
+
+
+----
+
+:data-rotate: 90
+
+MusicBrainz services
+====================
+
+* Number of queries served: **11 Billions** of 200s answers
+
+* Incoming Requests: 850 req/s
+
+* Handled by upstreams: 280 req/s
+
