@@ -1,5 +1,5 @@
 :title: MetaBrainz Summit 2018 - Resources
-:data-transition-duration: 1500
+:data-transition-duration: 800
 :css: mb2018.css
 :skip-help: true
 
@@ -22,13 +22,8 @@ And connect with a browser to http://localhost:8000
 
 ----
 
-:data-x: 0
-:data-y: 0
-:data-z: 0
-:data-rotate-x: 0
-:data-rotate-y: 0
-:data-rotate-z: 0
-:scale: 1
+:hovercraft-path: M 40000,60000 a 40000 40000 0 0 0 80000,0 a 40000 40000 0 0 0 -80000,0 Z
+
 
 MetaBrainz Summit 2018
 ======================
@@ -38,11 +33,6 @@ Our infrastructure
 
 
 ----
-
-:data-rotate-z: r45
-:data-x: 2000
-:data-y: 0
-
 
 Number of servers
 =================
@@ -60,9 +50,6 @@ Number of servers
     TODO
 
 ----
-
-:data-x: r-1000
-:data-y: r-1000
 
 Memory, storage, processing power
 =================================
@@ -88,13 +75,13 @@ Network traffic
 
 * *~50 mbits/s* out, *20 mbits/s* in
 
+* *120* mbits/s out before, due to QNAP
 
-.. note::
-
-    TODO
 
 ----
 
+Latency
+=======
 
 .. image:: images/ping_latency_world.png
     :height: 600px
@@ -125,14 +112,12 @@ MusicBrainz services
 ----
 
 
-Post QNAP
-=========
+MusicBrainz services
+====================
 
+* MB Website mean response time: **240 ms**
+* WS mean response time a bit worse: 20 to 30ms
 
-
-Bandwidth usage went from
-
-*120* mbits/s to *50* mbits/s
 
 
 ----
@@ -147,10 +132,47 @@ SOLR
 
 ----
 
+Hetzner Cloud
+=============
+
+* Hosting adds 10ms latency on WS (more hops)
+* VM CPU performance isn't guaranteed
+
+----
+
+Hetzner Cloud
+=============
+
+* low cost: 99€ / month for 6 VMs (SOLR)
+* convenient
+* not 100% on, due to Hetzner maintenance ops
+
+----
+
 Docker
 ======
 
-*170* containers running
+* *170* containers running
+* our setup is not standard enough
+* kubernetes is still very far
+
+----
+
+Docker
+======
+
+* some issues related to git2consul
+* docker-server-configs critical
+
+----
+
+Docker
+======
+
+* volumes management is a pain
+* some containers are critical
+* restarting docker / rebooting machine not possible
+
 
 
 ----
@@ -177,9 +199,7 @@ Soon...
 
 ----
 
-:scale: 3
-:data-z: 8000
-        
+
 Thanks !
 ========
 
