@@ -128,6 +128,7 @@ SOLR
 * 6 servers on Hetzner Cloud
 * *180 req/s* during peak time
 * Worst mean response time: *125 ms*
+* Best mean response time: 75 ms
 * full redundancy, automatic fail over
 
 ----
@@ -203,6 +204,6 @@ Soon...
 Thanks !
 ========
 
-Made with Hovercraft_
+Made with Hovercraft_ and Critical
 
 .. _Hovercraft: https://github.com/regebro/hovercraft
