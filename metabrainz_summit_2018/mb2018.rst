@@ -83,16 +83,19 @@ Network traffic
 Latency
 =======
 
+
 .. image:: images/ping_latency_world.png
     :height: 600px
 
+.. note::
+    Ping to kiki.mb.o from different parts of the World
 
 ----
 
 :id: mbs1
 
-MusicBrainz services
-====================
+MusicBrainz Services I
+======================
 
 Number of queries served this year
   
@@ -102,8 +105,8 @@ Number of queries served this year
 ----
 
 
-MusicBrainz services
-====================
+MusicBrainz Services II
+=======================
 
 * Incoming Requests: *850 req/s*
 
@@ -112,8 +115,8 @@ MusicBrainz services
 ----
 
 
-MusicBrainz services
-====================
+MusicBrainz Services III
+========================
 
 * MB Website mean response time: **240 ms**
 * WS mean response time a bit worse: 20 to 30ms
@@ -133,16 +136,16 @@ SOLR
 
 ----
 
-Hetzner Cloud
-=============
+Hetzner Cloud I
+===============
 
 * Hosting adds 10ms latency on WS (more hops)
 * VM CPU performance isn't guaranteed
 
 ----
 
-Hetzner Cloud
-=============
+Hetzner Cloud II
+================
 
 * low cost: 99€ / month for 6 VMs (SOLR)
 * convenient
@@ -150,8 +153,8 @@ Hetzner Cloud
 
 ----
 
-Docker
-======
+Docker I
+========
 
 * *170* containers running
 * our setup is not standard enough
@@ -159,16 +162,16 @@ Docker
 
 ----
 
-Docker
-======
+Docker II
+=========
 
 * some issues related to git2consul
 * docker-server-configs critical
 
 ----
 
-Docker
-======
+Docker III
+==========
 
 * volumes management is a pain
 * some containers are critical
