@@ -1,0 +1,59 @@
+
+body {
+    font-size: 250%;
+    text-align: center;
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    /* font-family: Racing Sans One; */
+    font-size: 120%;
+    color: darkorange;
+    font-style: italic;
+}
+
+strong {
+    font-size: 120%;
+    color: darkorange;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+li {
+    font-size: 125%;
+    font-family: serif;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+    list-style-type: circle;
+}
+
+a {
+    color: black;
+}
+
+div#mbs1 {
+}
+
+
+div.header img {
+    opacity: 0.2;
+}
