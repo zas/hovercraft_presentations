@@ -1,0 +1,69 @@
+
+body {
+    font-size: 150%;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+
+p {
+    font-size: 125%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    /* font-family: Racing Sans One; */
+    font-size: 120%;
+    color: darkorange;
+    font-style: italic;
+}
+
+strong {
+    font-size: 120%;
+    color: darkred;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+    list-style: none;
+}
+
+li {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+}
+
+li::before {
+  content: "•";
+  font-size: 200%;
+  color: purple;
+  display: inline-block;
+  width: 0.8em;
+  margin-left: -0.5em;
+  vertical-align: middle;
+}
+
+a {
+    color: black;
+}
+
+div#mbs1 {
+}
+
+
+div.header img {
+    opacity: 0.05;
+}
